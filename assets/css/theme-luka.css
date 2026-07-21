@@ -102,7 +102,7 @@ body.theme-luka .top-nav {
 
 body.theme-luka .nav-container {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1240px;
   padding: 0 40px;
   display: flex;
   align-items: center;
@@ -134,7 +134,7 @@ body.theme-luka .theme-toggle:hover {
 
 body.theme-luka .wrapper {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1240px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +147,7 @@ body.theme-luka .sidebar {
   flex-shrink: 0;
   position: fixed;
   top: 60px;
-  left: calc(50% - 560px);
+  left: max(0px, calc(50% - 620px));
   height: calc(100vh - 60px);
   overflow-y: auto;
   text-align: center;
@@ -168,15 +168,23 @@ body.theme-luka .profile-card {
 
 body.theme-luka .image.avatar {
   display: block;
+  width: 220px;
+  height: 220px;
   margin: 0 auto 28px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #fff;
 }
 
 body.theme-luka .image.avatar img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 6px 24px var(--luka-shadow);
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center top;
+  transform: scale(1.25);
+  transform-origin: center top;
+  filter: brightness(1.15);
 }
 
 body.theme-luka .site-name {
@@ -232,29 +240,54 @@ body.theme-luka .visitor-card {
   box-shadow: 0 8px 22px var(--luka-shadow);
 }
 
-body.theme-luka .visitor-card-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 10px;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--luka-accent);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
 body.theme-luka .visitor-card-body {
   font-size: 13px;
   line-height: 1.6;
+}
+
+body.theme-luka .world-map-visual {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--luka-footer-border);
+  border-radius: 8px;
 }
 
 body.theme-luka .world-map-img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  border: 1px solid var(--luka-footer-border);
+}
+
+body.theme-luka .map-marker {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fffaf4;
+  border-radius: 50%;
+  background: var(--luka-accent);
+  box-shadow: 0 0 0 1px rgba(194, 113, 79, 0.28);
+  cursor: help;
+}
+
+body.theme-luka .map-marker-shanghai {
+  left: 83.7427%;
+  top: 32.6498%;
+}
+
+body.theme-luka .map-marker-hunan {
+  left: 81.3719%;
+  top: 34.3177%;
+}
+
+body.theme-luka .map-marker-hong-kong {
+  left: 81.7137%;
+  top: 37.6004%;
+}
+
+body.theme-luka .map-marker-singapore {
+  left: 78.8388%;
+  top: 49.2488%;
 }
 
 body.theme-luka .content {
@@ -342,6 +375,12 @@ body.theme-luka .institution-logo {
   width: 52px;
   height: 52px;
   flex-shrink: 0;
+}
+
+body.theme-luka .hkust-emblem {
+  height: 74px;
+  object-fit: contain;
+  object-position: center;
 }
 
 body.theme-luka .experience-content {
@@ -631,7 +670,7 @@ body.theme-luka strong {
 }
 
 @media (max-width: 640px) {
-  body.theme-luka .image.avatar img {
+  body.theme-luka .image.avatar {
     width: 148px;
     height: 148px;
   }

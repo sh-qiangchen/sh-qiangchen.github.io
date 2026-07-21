@@ -36,9 +36,9 @@
   <div class="wrapper">
     <header class="sidebar">
       <div class="profile-card">
-        <a class="image avatar">
+        <div class="image avatar">
           <img src="assets/img/WechatIMG7393.jpg" alt="Qiang Chen profile photo">
-        </a>
+        </div>
 
         <h1 class="site-name">Qiang Chen</h1>
         <p class="site-email">qchencw@connect.ust.hk</p>
@@ -52,9 +52,14 @@
         </div>
 
         <div class="visitor-card world-map-card">
-          <div class="visitor-card-title"><i class="fa-solid fa-earth-asia"></i> World Map</div>
           <div class="visitor-card-body">
-            <img class="world-map-img" src="assets/img/world-map.svg" alt="Stylized world map">
+            <div class="world-map-visual" role="img" aria-label="Visited locations: Shanghai, Hunan, Hong Kong, and Singapore">
+              <img class="world-map-img" src="assets/img/world-map-natural-earth.png" alt="" width="1440" height="720">
+              <span class="map-marker map-marker-shanghai" data-lat="31.2304" data-lon="121.4737" title="Shanghai, China"></span>
+              <span class="map-marker map-marker-hunan" data-lat="28.2282" data-lon="112.9388" title="Changsha, Hunan, China"></span>
+              <span class="map-marker map-marker-hong-kong" data-lat="22.3193" data-lon="114.1694" title="Hong Kong"></span>
+              <span class="map-marker map-marker-singapore" data-lat="1.3521" data-lon="103.8198" title="Singapore"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -70,23 +75,23 @@
         </div>
       </div>
 
-      <!--
       <div class="section" id="education">
         <h2 class="section-title">Education</h2>
         <div class="section-body">
           <div class="card">
             <div class="experience-item">
-              <img src="assets/img/institution.svg" alt="Institution logo" class="institution-logo">
+              <img src="assets/img/LOGO_UST_blue_gold.png" alt="HKUST logo" class="institution-logo hkust-emblem">
               <div class="experience-content">
-                <p class="exp-title"><strong>Your University</strong></p>
-                <p class="exp-detail">B.S. / M.S. / Ph.D. in Your Major</p>
-                <p class="exp-period">2022 - 2026</p>
+                <p class="exp-title"><strong>The Hong Kong University of Science and Technology (HKUST)</strong></p>
+                <p class="exp-detail">Ph.D. Student, School of Engineering</p>
+                <p class="exp-period">2026.01 - Present</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!--
       <div class="section" id="experience">
         <h2 class="section-title">Experience</h2>
         <div class="section-body">
@@ -209,9 +214,9 @@
                   <div class="pub-content">
                     <div class="title">GeoClean: Training-Free Concept Erasure in Rectified Flow via Posterior-Competition Stabilization</div>
                     <div class="author">Siyu Shang, <strong>Qiang Chen*</strong>, Zhongze Wu, Hongyan Xu, Yichao Cao, Yi Chen, Jun Long, Xiu Su</div>
-                    <div class="periodical"><em><strong>ACM MM 2026</strong></em></div>
+                    <div class="periodical"><em><strong>ACM MM, 2026</strong></em></div>
                     <div class="links">
-                      <a href="https://xiusu.github.io/#publications">Paper</a><!-- / <a href="#">Code</a> / <a href="#">Project</a> -->
+                      <a href="">Paper</a><!-- / <a href="#">Code</a> / <a href="#">Project</a> -->
                     </div>
                   </div>
                 </div>
@@ -221,7 +226,7 @@
                   <div class="pub-content">
                     <div class="title">ROVER: Robust Generative Continual Identity Unlearning against Relearning Attacks</div>
                     <div class="author">Tairan Huang, <strong>Qiang Chen*</strong>, Beibei Hu, Yunlong Zhao, Hongyan Xu, Zhiyuan Chen, Yi Chen, Xiu Su</div>
-                    <div class="periodical"><em><strong>AAAI 2026</strong></em></div>
+                    <div class="periodical"><em><strong>AAAI, 2026</strong></em></div>
                     <div class="links">
                       <a href="https://ojs.aaai.org/index.php/AAAI/article/view/37426">Paper</a><!-- / <a href="#">Code</a> / <a href="#">Project</a> -->
                     </div>
@@ -233,7 +238,7 @@
                   <div class="pub-content">
                     <div class="title">Graph Unlearning Meets Influence-aware Negative Preference Optimization</div>
                     <div class="author"><strong>Qiang Chen</strong>, Zhongze Wu, Ang He, Xi Lin, Shuo Jiang, Shan You, Chang Xu, Yi Chen, Xiu Su</div>
-                    <div class="periodical"><em><strong>ACM MM 2025</strong></em></div>
+                    <div class="periodical"><em><strong>ACM MM, 2025</strong></em></div>
                     <div class="links">
                       <a href="https://arxiv.org/abs/2510.19479">Paper</a><!-- / <a href="#">Code</a> / <a href="#">Project</a> -->
                     </div>
@@ -245,7 +250,7 @@
                   <div class="pub-content">
                     <div class="title">Stable Fair Graph Representation Learning with Lipschitz Constraint</div>
                     <div class="author"><strong>Qiang Chen</strong>, Zhongze Wu, Xiu Su, Xi Lin, Zhe Qu, Shan You, Shuo Yang, Chang Xu</div>
-                    <div class="periodical"><em><strong>ICML 2025</strong></em></div>
+                    <div class="periodical"><em><strong>ICML, 2025</strong></em></div>
                     <div class="links">
                       <a href="https://proceedings.mlr.press/v267/chen25bs.html">Paper</a><!-- / <a href="#">Code</a> / <a href="#">Project</a> -->
                     </div>
@@ -257,7 +262,7 @@
                   <div class="pub-content">
                     <div class="title">Brain Tumor Segmentation for Missing Modalities by Supplementing Missing Features</div>
                     <div class="author">Yian Zhu, Shaoyu Wang, Runlong Lin, Yun Hu, <strong>Qiang Chen</strong></div>
-                    <div class="periodical"><em><strong>ICCCBDA 2021</strong></em></div>
+                    <div class="periodical"><em><strong>ICCCBDA, 2021</strong></em></div>
                     <div class="links">
                       <a href="https://ieeexplore.ieee.org/document/9442533/">Paper</a><!-- / <a href="#">Code</a> / <a href="#">Project</a> -->
                     </div>
@@ -269,7 +274,7 @@
                   <div class="pub-content">
                     <div class="title">Edge-aware Fully Convolutional Network with CRF-RNN Layer for Hippocampus Segmentation</div>
                     <div class="author">Shaoyu Wang, Lirong Yi, <strong>Qiang Chen</strong>, Zhixiang Meng, Hongliang Dong, Zhi He</div>
-                    <div class="periodical"><em><strong>ITAIC 2019</strong></em></div>
+                    <div class="periodical"><em><strong>ITAIC, 2019</strong></em></div>
                     <div class="links">
                       <a href="https://ieeexplore.ieee.org/document/8785801/">Paper</a><!-- / <a href="#">Code</a> / <a href="#">Project</a> -->
                     </div>
