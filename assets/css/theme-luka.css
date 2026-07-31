@@ -19,7 +19,7 @@ body.theme-luka *::after {
 }
 
 :root {
-  --luka-bg: #faf9f7;
+  --luka-bg: #ffffff;
   --luka-text: #3d3929;
   --luka-accent: #c2714f;
   --luka-secondary: #8c8577;
@@ -57,7 +57,7 @@ body.theme-luka *::after {
 }
 
 [data-theme="light"] {
-  --luka-bg: #faf9f7;
+  --luka-bg: #ffffff;
   --luka-text: #3d3929;
   --luka-accent: #c2714f;
   --luka-secondary: #8c8577;
@@ -80,6 +80,36 @@ body.theme-luka {
 body.theme-luka a {
   color: var(--luka-accent);
   text-decoration: none;
+}
+
+body.theme-luka .local-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask-image: var(--icon-mask);
+  mask-image: var(--icon-mask);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+body.theme-luka .svg-icon {
+  display: block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+body.theme-luka .icon-moon {
+  --icon-mask: url("../img/icon-moon.svg");
+}
+
+body.theme-luka .icon-sun {
+  --icon-mask: url("../img/icon-sun.svg");
 }
 
 body.theme-luka a:hover {
