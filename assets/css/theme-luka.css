@@ -604,6 +604,10 @@ body.theme-luka .pub-content .periodical {
   font-size: 14px;
 }
 
+body.theme-luka .oral-highlight {
+  color: #d32f2f;
+}
+
 body.theme-luka .pub-content .links a {
   font-size: 13px;
   font-weight: 500;
