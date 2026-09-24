@@ -592,6 +592,12 @@ body.theme-luka .pub-content .title {
   font-weight: 600;
 }
 
+@media (min-width: 961px) {
+  body.theme-luka .pub-content .title {
+    white-space: nowrap;
+  }
+}
+
 body.theme-luka .pub-content .author {
   margin-bottom: 4px;
   color: var(--luka-secondary);
